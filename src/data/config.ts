@@ -1,29 +1,34 @@
 export const REVENUE_CURRENCY = 'Gs.';
-export const WHATSAPP_NUMBER = '+595985557070';
-export const ADDRESS =
-  'Calle Antequera 1649 entre 25 de Mayo y Villarrica, Encarnación, Paraguay';
+export const WHATSAPP_PRIMARY = '+595995354558';
+export const WHATSAPP_SECONDARY = '+595976549116';
+
+export const BRAND_NAME = 'Pizzería Rios';
+export const BRAND_TAGLINE = 'Pizzería & Hamburguesería';
+export const BRAND_DESCRIPTION =
+  'Los mejores precios y calidad en comidas rápidas. Pizzería y Hamburguesería.';
+
+export const ADDRESS = 'Arroyo Porã, Encarnación, Paraguay (D70310)';
+export const DELIVERY_NOTE = 'Costo de delivery: 5.000 Gs. zona Arroyo Porã';
+
 export const SCHEDULE = {
-  miercoles_lunes: '18:00 hs. a 00:00 hs.',
-  martes: 'Cerrado',
+  martes_domingo: '18:00 hs. a 00:00 hs.',
+  lunes: 'Cerrado',
 } as const;
 
-export const BRAND_NAME = 'LA FABRIL';
-export const BRAND_TAGLINE = 'Pizza Lounge';
-
 export const MAPS_LINK =
-  'https://www.google.com/maps/place/La+FABRIL+-+Pizza+Lounge/@-27.3298742,-56.0238055,12z/data=!4m10!1m2!2m1!1sCalle+Antequera+1649+entre+25+de+Mayo+y+Villarrica,+Encarnaci%C3%B3n,+Paraguay!3m6!1s0x94579568527c9387:0x5ae809dbaa49a749!8m2!3d-27.3298742!4d-55.8713702!15sCkpDYWxsZSBBbnRlcXVlcmEgMTY0OSBlbnRyZSAyNSBkZSBNYXlvIHkgVmlsbGFycmljYSwgRW5jYXJuYWNpw7NuLCBQYXJhZ3VheVpKIkhjYWxsZSBhbnRlcXVlcmEgMTY0OSBlbnRyZSAyNSBkZSBtYXlvIHkgdmlsbGFycmljYSBlbmNhcm5hY2nDs24gcGFyYWd1YXmSARBwaXp6YV9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJOYWpWcFlYTlJSUkFC4AEA-gEECAAQOw!16s%2Fg%2F11byyd85sk?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D';
+  'https://www.google.com/maps/search/?api=1&query=Arroyo+Porã+Encarnación+Paraguay';
 
-export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER.replace(
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_PRIMARY.replace(
   /[^0-9]/g,
   '')}?text=${encodeURIComponent(
-  '¡Hola La Fabril! Estoy viendo el menú web y quiero hacer una consulta/reserva.',
+  '¡Hola Pizzería Rios! Quiero hacer una consulta.',
 )}`;
 
-export const CATEGORIES = [
-  'Pizzas Artesanales',
-  'Hamburguesas & Picadas',
-  'Tragos & Bebidas',
-  'Promociones',
-] as const;
+export const WHATSAPP_SECONDARY_LINK = `https://wa.me/${WHATSAPP_SECONDARY.replace(
+  /[^0-9]/g,
+  '')}?text=${encodeURIComponent(
+  '¡Hola Pizzería Rios! Quiero hacer una consulta.',
+)}`;
 
+export const CATEGORIES = ['Pizzas', 'Hamburguesas', 'Lomitos y Extras'] as const;
 export type Category = (typeof CATEGORIES)[number];

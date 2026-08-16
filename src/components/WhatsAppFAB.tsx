@@ -7,7 +7,7 @@ export default function WhatsAppFAB() {
       target="_blank"
       rel="noreferrer"
       aria-label="Contactar por WhatsApp"
-      className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/40 transition-all hover:scale-110 active:scale-95"
+      className="fixed bottom-5 left-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/40 transition-all hover:scale-110 active:scale-95"
     >
       <svg
         viewBox="0 0 24 24"

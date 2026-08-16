@@ -1,4 +1,4 @@
-import { BRAND_NAME, BRAND_TAGLINE } from '../data/config';
+import { BRAND_NAME, BRAND_TAGLINE, BRAND_DESCRIPTION } from '../data/config';
 import { getOpenStatus } from '../utils/format';
 import { ChevronDown, UtensilsCrossed } from 'lucide-react';
 
@@ -9,7 +9,7 @@ export default function Hero() {
     <header className="relative overflow-hidden">
       {/* texture / vignette */}
       <div
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
+        className="absolute inset-0 opacity-[0.05] pointer-events-none"
         style={{
           backgroundImage:
             'radial-gradient(circle at 20% 30%, #fff 1px, transparent 1px), radial-gradient(circle at 70% 60%, #fff 1px, transparent 1px)',
@@ -19,14 +19,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-fire/10 via-transparent to-charcoal" />
 
       <div className="relative mx-auto max-w-5xl px-6 pt-14 pb-12 sm:pt-20 sm:pb-16 text-center">
-        {/* logo */}
-        <div className="mx-auto mb-6 h-28 w-28 sm:h-32 sm:w-32 rounded-full border-2 border-amber/70 bg-charcoal grid place-items-center shadow-[0_0_40px_-8px_rgba(255,179,0,0.4)] overflow-hidden">
-          <img
-            src="/imagenes/logolafabril.webp"
-            alt="Logo de La Fabril Pizza Lounge"
-            className="h-full w-full object-cover"
-            loading="eager"
-          />
+        {/* logo placeholder */}
+        <div className="mx-auto mb-6 grid h-28 w-28 sm:h-32 sm:w-32 place-items-center rounded-full border-2 border-amber/70 bg-fire shadow-[0_0_40px_-8px_rgba(255,179,0,0.4)]">
+          <div className="text-center px-1">
+            <span className="block font-display text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber leading-tight">
+              Pizzería
+            </span>
+            <span className="block font-display text-base sm:text-lg font-bold uppercase tracking-wide text-amber leading-none">
+              RIOS
+            </span>
+          </div>
         </div>
 
         {/* status badge */}
@@ -48,24 +50,24 @@ export default function Hero() {
         </div>
 
         <h1 className="font-display font-bold uppercase tracking-tight leading-[0.95] text-5xl sm:text-7xl">
-          <span className="text-white">LA FABRIL</span>
-          <span className="block text-fire mt-1 text-2xl sm:text-3xl tracking-[0.3em]">
+          <span className="text-white">PIZZERÍA</span>{' '}
+          <span className="text-fire">RIOS</span>
+          <span className="block text-amber mt-2 text-xl sm:text-2xl tracking-[0.3em]">
             {BRAND_TAGLINE.toUpperCase()}
           </span>
         </h1>
 
         <p className="mt-5 max-w-xl mx-auto text-gray-400 text-sm sm:text-base text-balance">
-          Pizza artesanal, tragos y promociones
-          imperdibles en el corazón de Encarnación.
+          {BRAND_DESCRIPTION}
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
             href="#menu"
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-fire px-7 py-3.5 font-display font-semibold uppercase tracking-wider text-white shadow-lg shadow-fire/30 transition-all hover:bg-fire-light hover:shadow-fire/40 active:scale-95"
+            className="group inline-flex items-center justify-center gap-2 rounded-full bg-amber px-7 py-3.5 font-display font-semibold uppercase tracking-wider text-charcoal shadow-lg shadow-amber/30 transition-all hover:bg-amber-light hover:shadow-amber/40 active:scale-95"
           >
             <UtensilsCrossed className="h-5 w-5" />
-            Ver Menú Interactivo
+            Ver Menú
           </a>
           <a
             href="#info"

@@ -1,20 +1,20 @@
-import { useRef, type Dispatch, type SetStateAction } from 'react';
+import { type Dispatch, type SetStateAction } from 'react';
 import { CATEGORIES, type Category } from '../data/config';
+import { menu } from '../data/menu';
 
 type Props = {
   active: Category;
   onChange: Dispatch<SetStateAction<Category>>;
-  counts: Record<string, number>;
 };
 
-export default function CategoryFilter({ active, onChange, counts }: Props) {
-  const scrollRef = useRef<HTMLDivElement>(null);
+export default function CategoryFilter({ active, onChange }: Props) {
+  const counts = CATEGORIES.reduce<Record<string, number>>((acc, cat) => {
+    acc[cat] = menu.filter((i) => i.category === cat).length;
+    return acc;
+  }, {});
 
   return (
-    <div
-      ref={scrollRef}
-      className="no-scrollbar flex gap-2.5 overflow-x-auto px-6 pb-2 sm:justify-center"
-    >
+    <div className="no-scrollbar flex gap-2.5 overflow-x-auto px-6 pb-2 sm:justify-center">
       {CATEGORIES.map((cat) => {
         const isActive = cat === active;
         const count = counts[cat] ?? 0;
