@@ -19,16 +19,13 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-fire/10 via-transparent to-charcoal" />
 
       <div className="relative mx-auto max-w-5xl px-6 pt-14 pb-12 sm:pt-20 sm:pb-16 text-center">
-        {/* logo placeholder */}
-        <div className="mx-auto mb-6 grid h-28 w-28 sm:h-32 sm:w-32 place-items-center rounded-full border-2 border-amber/70 bg-fire shadow-[0_0_40px_-8px_rgba(255,179,0,0.4)]">
-          <div className="text-center px-1">
-            <span className="block font-display text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-amber leading-tight">
-              Pizzería
-            </span>
-            <span className="block font-display text-base sm:text-lg font-bold uppercase tracking-wide text-amber leading-none">
-              RIOS
-            </span>
-          </div>
+        <div className="mx-auto mb-6 flex h-36 w-52 sm:h-44 sm:w-64 items-center justify-center overflow-hidden rounded-2xl border-2 border-amber/70 bg-[#201e1f] p-2 shadow-[0_0_40px_-8px_rgba(255,179,0,0.4)]">
+          <img
+            src="/imagenes/menu/logorios%20copy.webp"
+            alt={BRAND_NAME}
+            className="h-full w-full object-contain"
+            loading="eager"
+          />
         </div>
 
         {/* status badge */}

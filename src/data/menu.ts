@@ -31,7 +31,7 @@ export const menu: MenuItem[] = [
     name: 'Pizza Choclo',
     category: 'Pizzas',
     price: 25000,
-    image: 'https://images.pexels.com/photos/6614249/pexels-photo-6614249.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: 'https://images.pexels.com/photos/31450854/pexels-photo-31450854.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     id: 'pizza-doble-mozzarella',
@@ -46,7 +46,7 @@ export const menu: MenuItem[] = [
     name: 'Pizza Pollo',
     category: 'Pizzas',
     price: 25000,
-    image: 'https://images.pexels.com/photos/5107523/pexels-photo-5107523.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: 'https://images.pexels.com/photos/5639547/pexels-photo-5639547.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     id: 'pizza-napolitana',
@@ -133,6 +133,6 @@ export const menu: MenuItem[] = [
     category: 'Lomitos y Extras',
     description: 'Salsa de ajo 2.000 Gs. · Mayonesa 1.000 Gs. · Ketchup 1.000 Gs.',
     price: 1000,
-    image: 'https://images.pexels.com/photos/4676640/pexels-photo-4676640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: 'https://images.pexels.com/photos/34318136/pexels-photo-34318136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
 ];
